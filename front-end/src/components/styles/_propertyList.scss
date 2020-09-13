@@ -1,0 +1,41 @@
+.propertyList {
+  background: #faf8f8;
+  position: relative;
+  bottom: 50px;
+  padding: 30px 0;
+
+  &__container {
+    width: 1150px;
+    margin: 0 auto;
+
+    h1, p {
+     text-align: center;
+    }
+  }
+
+  &__items {
+    display: flex;
+      text-align: left;
+      flex-wrap: wrap;
+
+    &--item{
+      width: 250px;
+      margin-right: 25px;
+      border: 1px solid #ccc;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    &--item:hover {
+      
+    }
+
+    &--img {
+      width: 100%;
+    }
+
+    &--price {
+      color: $purple-color;
+    }
+  }
+}
