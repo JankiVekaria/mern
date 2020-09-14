@@ -1,10 +1,11 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Signup() {
   return (
     <>
       <div className="signup" id="signup">
-        <p className="signup__nav">Home > signup</p>
+        <p className="signup__nav">Home / signup</p>
         <h1 className="signup__headerOne">Sign Up</h1>
         <h3 className="signup__headerThreee">Enter your details here</h3>
 
@@ -51,7 +52,10 @@ export default function Signup() {
       <div className="popup" id="popup">
         <div className="popup__content">
           <div style={{ border: '1px solid #ccc', padding: '20px' }}>
-            <a href="#signup" className="popup__content--close"><i className="far fa-times-circle"></i></a>
+            <a href="/signup" className="popup__content--close">
+              {/* <i className="far fa-times-circle"></i> */}
+              <FontAwesomeIcon icon={['far', 'times-circle']} />
+              </a>
             <div className="popup__content--text">
               <h1 className="popup__content--header">Terms and Conditions</h1>
               <h3 className="popup__content--headerTwo">About the new rent control exemption and the standard lease</h3>

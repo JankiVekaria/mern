@@ -1,4 +1,5 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Login() {
   return (
@@ -10,12 +11,18 @@ export default function Login() {
       <div className="login__card">
         <form className="login__form">
           <div className="login__card--email">
-            <span className="login__card--atSymbol"><i className="fas fa-at"></i></span>
+            <span className="login__card--atSymbol">
+              {/* <i className="fas fa-at"></i> */}
+              <FontAwesomeIcon icon={['fas', 'at']} />
+              </span>
             <input type="text" className="login__card--emailInput" placeholder="Enter your email..." />
           </div>
 
           <div className="login__card--password">
-            <span className="login__card--lockSymbol"><i className="fas fa-lock"></i></span>
+            <span className="login__card--lockSymbol">
+              {/* <i className="fas fa-lock"></i> */}
+              <FontAwesomeIcon icon={['fas','lock']} />
+            </span>
             <input type="password" className="login__card--passwordInput" placeholder="Enter your password..." />
           </div>
 

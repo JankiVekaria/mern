@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
 const formValid = formErrors => {
 let valid = true;
 
@@ -102,7 +104,6 @@ export default class AdvertisementUpload extends Component {
       agentName: this.uploadForm.current.name.value,
       agentEmail: this.uploadForm.current.phone.value,
       agentPhone: this.uploadForm.current.email.value,
-      // agentImage: this.uploadForm.current.photo.value,
       description: this.uploadForm.current.description.value
     }
 
@@ -162,7 +163,7 @@ export default class AdvertisementUpload extends Component {
     const { formErrors } = this.state;
     return (
       <div className="adUpload">
-        <h1>Upload your Advertisement</h1>
+        <h1>List your Property</h1>
         <p>Please enter the details of your property</p>
 
         <div className="adUpload__container">
@@ -212,7 +213,10 @@ export default class AdvertisementUpload extends Component {
 
             <div className="adUpload__row">
               <div>
-                <label>Latitude:</label><sup><i className="far fa-question-circle" onClick={this.showPopup}></i></sup>
+                <label>Latitude:</label><sup>
+                  <i className="far fa-question-circle" onClick={this.showPopup}></i>
+                  {/* <FontAwesomeIcon icon={['far', 'question-circle']} /> */}
+                  </sup>
 
                 <input type="text" name="latitude" className="adUpload__container--latitude" noValidate onChange={this.handleChange} />
                 <span className="adUpload__row--popup" style={{ display: this.state.showPopup ? 'block' : 'none' }}>

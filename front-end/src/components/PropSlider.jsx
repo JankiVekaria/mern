@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Card from './Card';
+import {FontAwesomeIcon as Falcon} from '@fortawesome/react-fontawesome'
+
 
 export default class PropSlider extends Component {
 
@@ -41,8 +43,8 @@ export default class PropSlider extends Component {
 
     return (
       <div className="slider">
-        <h1 className="slider__header">Top Affordable houses in Greater Toronto Area</h1>
-
+        <h1 className="slider__header">Top Affordable houses</h1>
+            {/* <Falcon icon={['fas', 'angle-left']} onClick={() => this.prevProperty()} style={{ display: property.index === 0 ? 'none' : 'block' }}/> */}
         <i className="fas fa-angle-left"
           onClick={() => this.prevProperty()} style={{ display: property.index === 0 ? 'none' : 'block' }}
         ></i>

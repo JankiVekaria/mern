@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default class Header extends Component {
 
@@ -44,7 +45,10 @@ export default class Header extends Component {
             <nav className="header__nav">
               <ul className="header__nav--list">
                 <Link to={"/advertisement_upload"}>
-                  <li className="header__nav--item" title="upload your ad">List your rental advertisement <i className="header__nav--upload fas fa-upload"></i></li>
+                  <li className="header__nav--item" title="upload your ad">List your property 
+                    {/* <FontAwesomeIcon icon={['fas', 'upload']} /> */}
+                    <i className="header__nav--upload fas fa-upload"></i>
+                  </li>
                 </Link>
 
                 {/* <Link to={"/search"}>

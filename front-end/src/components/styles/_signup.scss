@@ -111,6 +111,13 @@
     &--close:hover {
       color: red;
     }
+    
+    &--close1{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
 
     &--headerTwo {
       color: $purple-color;

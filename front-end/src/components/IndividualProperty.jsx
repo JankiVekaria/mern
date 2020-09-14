@@ -80,7 +80,7 @@ export default class IndividualProperty extends Component {
               <h3>Please contact agent for more details about the property</h3>
             </div>
 
-          </div> {/* end of div on the right */}
+          </div>
         </div>
 
         <ReactTab propInfo={propItemData} />

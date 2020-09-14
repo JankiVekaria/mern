@@ -15,6 +15,12 @@
     position: relative;
     top: 150px;
   }
+
+  &__text{
+    color: white;
+    position: relative;
+    top: 10em;
+  }
 }
 
 @keyframes move {

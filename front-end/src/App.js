@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Main from './components/Main';
+import "./components/FontAwesom";
 import Header from './components/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Signup from './components/Signup';
